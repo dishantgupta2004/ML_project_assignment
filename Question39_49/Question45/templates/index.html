@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Enter Features for Prediction</h1>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.feature1.label }}<br>
+            {{ form.feature1(size=20) }}<br>
+            {{ form.errors.feature1 }}
+        </p>
+        <p>
+            {{ form.feature2.label }}<br>
+            {{ form.feature2(size=20) }}<br>
+            {{ form.errors.feature2 }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

@@ -1,0 +1,5 @@
+Data science is a discipline that combines math, statistics, artificial intelligence and computer science to process large volumes 
+of data and determine patterns and trends. With these insights, organizations can better understand why certain events happen and 
+develop more informed decision-making processes. Data science is the realm of data scientists, who often rely on artificial 
+intelligence, especially its subfields of machine learning and deep learning, to create models and make predictions using algorithms
+and other techniques.
